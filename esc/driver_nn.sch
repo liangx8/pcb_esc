@@ -1,13 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:power
-LIBS:74xx
-LIBS:sch_component
-LIBS:esc-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 4
+Sheet 4 4
 Title ""
 Date ""
 Rev ""
@@ -26,7 +22,7 @@ AR Path="/5DD9D27F/5DD851DD" Ref="U5"  Part="1"
 AR Path="/5DDC1E44/5DD851DD" Ref="U6"  Part="1" 
 F 0 "U6" H 4900 4681 50  0000 C CNN
 F 1 "IR2103" H 4900 4590 50  0000 C CNN
-F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 4900 4000 50  0001 C CIN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 4900 4000 50  0001 C CIN
 F 3 "https://www.infineon.com/dgdl/ir2103.pdf?fileId=5546d462533600a4015355c7b54b166f" H 4900 4000 50  0001 C CNN
 	1    4900 4000
 	1    0    0    -1  
@@ -40,13 +36,13 @@ Wire Wire Line
 Wire Wire Line
 	4600 4100 3850 4100
 $Comp
-L power:VCC #PWR019
+L power:VCC #PWR020
 U 1 1 5DD8CED1
 P 4900 2850
-AR Path="/5DD84A1A/5DD8CED1" Ref="#PWR019"  Part="1" 
-AR Path="/5DD9D27F/5DD8CED1" Ref="#PWR021"  Part="1" 
-AR Path="/5DDC1E44/5DD8CED1" Ref="#PWR023"  Part="1" 
-F 0 "#PWR023" H 4900 2700 50  0001 C CNN
+AR Path="/5DD84A1A/5DD8CED1" Ref="#PWR020"  Part="1" 
+AR Path="/5DD9D27F/5DD8CED1" Ref="#PWR022"  Part="1" 
+AR Path="/5DDC1E44/5DD8CED1" Ref="#PWR024"  Part="1" 
+F 0 "#PWR024" H 4900 2700 50  0001 C CNN
 F 1 "VCC" H 4917 3023 50  0000 C CNN
 F 2 "" H 4900 2850 50  0001 C CNN
 F 3 "" H 4900 2850 50  0001 C CNN
@@ -56,13 +52,13 @@ $EndComp
 Wire Wire Line
 	4900 2850 4900 3100
 $Comp
-L power:GND #PWR020
+L power:GND #PWR021
 U 1 1 5DD8D238
 P 4900 5050
-AR Path="/5DD84A1A/5DD8D238" Ref="#PWR020"  Part="1" 
-AR Path="/5DD9D27F/5DD8D238" Ref="#PWR022"  Part="1" 
-AR Path="/5DDC1E44/5DD8D238" Ref="#PWR024"  Part="1" 
-F 0 "#PWR024" H 4900 4800 50  0001 C CNN
+AR Path="/5DD84A1A/5DD8D238" Ref="#PWR021"  Part="1" 
+AR Path="/5DD9D27F/5DD8D238" Ref="#PWR023"  Part="1" 
+AR Path="/5DDC1E44/5DD8D238" Ref="#PWR025"  Part="1" 
+F 0 "#PWR025" H 4900 4800 50  0001 C CNN
 F 1 "GND" H 4905 4877 50  0000 C CNN
 F 2 "" H 4900 5050 50  0001 C CNN
 F 3 "" H 4900 5050 50  0001 C CNN
@@ -114,13 +110,13 @@ F 3 "~" H 5850 3450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:C C3
+L Device:C C4
 U 1 1 5DD90E17
 P 5850 4000
-AR Path="/5DD84A1A/5DD90E17" Ref="C3"  Part="1" 
-AR Path="/5DD9D27F/5DD90E17" Ref="C4"  Part="1" 
-AR Path="/5DDC1E44/5DD90E17" Ref="C5"  Part="1" 
-F 0 "C5" H 5965 4046 50  0000 L CNN
+AR Path="/5DD84A1A/5DD90E17" Ref="C4"  Part="1" 
+AR Path="/5DD9D27F/5DD90E17" Ref="C5"  Part="1" 
+AR Path="/5DDC1E44/5DD90E17" Ref="C6"  Part="1" 
+F 0 "C6" H 5965 4046 50  0000 L CNN
 F 1 "C" H 5965 3955 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5888 3850 50  0001 C CNN
 F 3 "~" H 5850 4000 50  0001 C CNN
@@ -179,6 +175,25 @@ Wire Wire Line
 	4900 4700 4900 5050
 Text HLabel 7650 3950 2    50   Input ~ 0
 OUT
+$Comp
+L Connector_Generic:Conn_01x01 J11
+U 1 1 5DCD03FD
+P 7550 3100
+AR Path="/5DD9D27F/5DCD03FD" Ref="J11"  Part="1" 
+AR Path="/5DD84A1A/5DCD03FD" Ref="J10"  Part="1" 
+AR Path="/5DDC1E44/5DCD03FD" Ref="J12"  Part="1" 
+F 0 "J12" H 7630 3142 50  0000 L CNN
+F 1 "Conn_01x01" H 7630 3051 50  0000 L CNN
+F 2 "Connector_Pin:Pin_D1.4mm_L8.5mm_W2.8mm_FlatFork" H 7550 3100 50  0001 C CNN
+F 3 "~" H 7550 3100 50  0001 C CNN
+	1    7550 3100
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	6700 3950 7650 3950
+	7350 3100 7350 3950
+Wire Wire Line
+	6700 3950 7350 3950
+Connection ~ 7350 3950
+Wire Wire Line
+	7350 3950 7650 3950
 $EndSCHEMATC
