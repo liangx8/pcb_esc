@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:esc-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -175,25 +176,6 @@ Wire Wire Line
 	4900 4700 4900 5050
 Text HLabel 7650 3950 2    50   Input ~ 0
 OUT
-$Comp
-L Connector_Generic:Conn_01x01 J11
-U 1 1 5DCD03FD
-P 7550 3100
-AR Path="/5DD9D27F/5DCD03FD" Ref="J11"  Part="1" 
-AR Path="/5DD84A1A/5DCD03FD" Ref="J10"  Part="1" 
-AR Path="/5DDC1E44/5DCD03FD" Ref="J12"  Part="1" 
-F 0 "J12" H 7630 3142 50  0000 L CNN
-F 1 "Conn_01x01" H 7630 3051 50  0000 L CNN
-F 2 "Connector_Pin:Pin_D1.4mm_L8.5mm_W2.8mm_FlatFork" H 7550 3100 50  0001 C CNN
-F 3 "~" H 7550 3100 50  0001 C CNN
-	1    7550 3100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	7350 3100 7350 3950
-Wire Wire Line
-	6700 3950 7350 3950
-Connection ~ 7350 3950
-Wire Wire Line
-	7350 3950 7650 3950
+	6700 3950 7650 3950
 $EndSCHEMATC
