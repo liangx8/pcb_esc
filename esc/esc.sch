@@ -110,7 +110,7 @@ U 1 1 5C0D041D
 P 1400 6150
 F 0 "J1" H 1480 6192 50  0000 L CNN
 F 1 "Conn_01x01" H 1480 6101 50  0000 L CNN
-F 2 "Connector_Pin:Pin_D1.4mm_L8.5mm_W2.8mm_FlatFork" H 1400 6150 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.5mm_Pad" H 1400 6150 50  0001 C CNN
 F 3 "~" H 1400 6150 50  0001 C CNN
 	1    1400 6150
 	1    0    0    -1  
@@ -121,7 +121,7 @@ U 1 1 5C0D0589
 P 1400 6650
 F 0 "J2" H 1480 6692 50  0000 L CNN
 F 1 "Conn_01x01" H 1480 6601 50  0000 L CNN
-F 2 "Connector_Pin:Pin_D1.4mm_L8.5mm_W2.8mm_FlatFork" H 1400 6650 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.5mm_Pad" H 1400 6650 50  0001 C CNN
 F 3 "~" H 1400 6650 50  0001 C CNN
 	1    1400 6650
 	1    0    0    -1  
@@ -829,7 +829,7 @@ U 1 1 6059ADC5
 P 6000 1800
 F 0 "J3" V 5872 1880 50  0000 L CNN
 F 1 "Conn_01x01" V 5963 1880 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.5mm_Pad" H 6000 1800 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.5mm_Pad" H 6000 1800 50  0001 C CNN
 F 3 "~" H 6000 1800 50  0001 C CNN
 	1    6000 1800
 	0    1    1    0   
@@ -840,7 +840,7 @@ U 1 1 6059C599
 P 6000 2450
 F 0 "J4" V 5872 2530 50  0000 L CNN
 F 1 "Conn_01x01" V 5963 2530 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.5mm_Pad" H 6000 2450 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.5mm_Pad" H 6000 2450 50  0001 C CNN
 F 3 "~" H 6000 2450 50  0001 C CNN
 	1    6000 2450
 	0    1    1    0   
@@ -851,7 +851,7 @@ U 1 1 6059C829
 P 6000 3050
 F 0 "J5" V 5872 3130 50  0000 L CNN
 F 1 "Conn_01x01" V 5963 3130 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.5mm_Pad" H 6000 3050 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.5mm_Pad" H 6000 3050 50  0001 C CNN
 F 3 "~" H 6000 3050 50  0001 C CNN
 	1    6000 3050
 	0    1    1    0   
