@@ -1,0 +1,165 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:VCC #PWR021
+U 1 1 604DBA95
+P 6150 2750
+AR Path="/604DB042/604DBA95" Ref="#PWR021"  Part="1" 
+AR Path="/604EA044/604DBA95" Ref="#PWR024"  Part="1" 
+AR Path="/6049954E/604DBA95" Ref="#PWR027"  Part="1" 
+F 0 "#PWR027" H 6150 2600 50  0001 C CNN
+F 1 "VCC" H 6165 2923 50  0000 C CNN
+F 2 "" H 6150 2750 50  0001 C CNN
+F 3 "" H 6150 2750 50  0001 C CNN
+	1    6150 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L sch_component:nfet Q2
+U 1 1 604DC525
+P 6150 4500
+AR Path="/604DB042/604DC525" Ref="Q2"  Part="1" 
+AR Path="/604EA044/604DC525" Ref="Q5"  Part="1" 
+AR Path="/6049954E/604DC525" Ref="Q8"  Part="1" 
+F 0 "Q8" H 6256 4546 50  0000 L CNN
+F 1 "nfet" H 6256 4455 50  0000 L CNN
+F 2 "footprint:SOIC-8" H 6150 4500 50  0001 C CNN
+F 3 "" H 6150 4500 50  0001 C CNN
+	1    6150 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 3750 6150 4300
+$Comp
+L Transistor_BJT:2N3055 Q1
+U 1 1 604E2C99
+P 5250 3750
+AR Path="/604DB042/604E2C99" Ref="Q1"  Part="1" 
+AR Path="/604EA044/604E2C99" Ref="Q4"  Part="1" 
+AR Path="/6049954E/604E2C99" Ref="Q7"  Part="1" 
+F 0 "Q7" H 5440 3796 50  0000 L CNN
+F 1 "2N3055" H 5440 3705 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5450 3675 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/2N3055-D.PDF" H 5250 3750 50  0001 L CNN
+	1    5250 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3400 5350 3550
+$Comp
+L Device:R R17
+U 1 1 604E3BE4
+P 5350 3150
+AR Path="/604DB042/604E3BE4" Ref="R17"  Part="1" 
+AR Path="/604EA044/604E3BE4" Ref="R19"  Part="1" 
+AR Path="/6049954E/604E3BE4" Ref="R21"  Part="1" 
+F 0 "R21" H 5420 3196 50  0000 L CNN
+F 1 "1K" H 5420 3105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5280 3150 50  0001 C CNN
+F 3 "~" H 5350 3150 50  0001 C CNN
+	1    5350 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3400 5350 3300
+Connection ~ 5350 3400
+Wire Wire Line
+	5350 3000 6150 3000
+Wire Wire Line
+	6150 3000 6150 2750
+$Comp
+L power:GND #PWR022
+U 1 1 604E5063
+P 6150 5300
+AR Path="/604DB042/604E5063" Ref="#PWR022"  Part="1" 
+AR Path="/604EA044/604E5063" Ref="#PWR025"  Part="1" 
+AR Path="/6049954E/604E5063" Ref="#PWR028"  Part="1" 
+F 0 "#PWR028" H 6150 5050 50  0001 C CNN
+F 1 "GND" H 6155 5127 50  0000 C CNN
+F 2 "" H 6150 5300 50  0001 C CNN
+F 3 "" H 6150 5300 50  0001 C CNN
+	1    6150 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 4700 6150 5300
+$Comp
+L power:GND #PWR020
+U 1 1 604E5617
+P 5350 4200
+AR Path="/604DB042/604E5617" Ref="#PWR020"  Part="1" 
+AR Path="/604EA044/604E5617" Ref="#PWR023"  Part="1" 
+AR Path="/6049954E/604E5617" Ref="#PWR026"  Part="1" 
+F 0 "#PWR026" H 5350 3950 50  0001 C CNN
+F 1 "GND" H 5355 4027 50  0000 C CNN
+F 2 "" H 5350 4200 50  0001 C CNN
+F 3 "" H 5350 4200 50  0001 C CNN
+	1    5350 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3950 5350 4200
+$Comp
+L Device:R R16
+U 1 1 604E821C
+P 4900 4500
+AR Path="/604DB042/604E821C" Ref="R16"  Part="1" 
+AR Path="/604EA044/604E821C" Ref="R18"  Part="1" 
+AR Path="/6049954E/604E821C" Ref="R20"  Part="1" 
+F 0 "R20" V 4693 4500 50  0000 C CNN
+F 1 "R" V 4784 4500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4830 4500 50  0001 C CNN
+F 3 "~" H 4900 4500 50  0001 C CNN
+	1    4900 4500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5850 4500 5050 4500
+Wire Wire Line
+	5050 3750 4300 3750
+Text HLabel 4300 4500 0    50   Input ~ 0
+IN
+Wire Wire Line
+	4750 4500 4300 4500
+Text HLabel 7450 3750 2    50   Output ~ 0
+OUT
+Wire Wire Line
+	6150 3750 7450 3750
+Text HLabel 4300 3750 0    50   Input ~ 0
+IP
+Wire Wire Line
+	5350 3400 5900 3400
+Connection ~ 6150 3000
+Wire Wire Line
+	6150 3600 6150 3750
+Connection ~ 6150 3750
+Wire Wire Line
+	6150 3000 6150 3200
+$Comp
+L sch_component:pfet Q3
+U 1 1 60629E37
+P 6350 3900
+AR Path="/604DB042/60629E37" Ref="Q3"  Part="1" 
+AR Path="/604EA044/60629E37" Ref="Q6"  Part="1" 
+AR Path="/6049954E/60629E37" Ref="Q9"  Part="1" 
+F 0 "Q9" H 6255 3354 50  0000 L CNN
+F 1 "pfet" H 6255 3445 50  0000 L CNN
+F 2 "footprint:SOIC-8" H 6250 3325 50  0001 L CNN
+F 3 "" H 6050 3400 50  0001 L CNN
+	1    6350 3900
+	1    0    0    1   
+$EndComp
+$EndSCHEMATC
