@@ -183,7 +183,6 @@ NoConn ~ 1500 3550
 NoConn ~ 1500 3450
 NoConn ~ 1500 2950
 NoConn ~ 1500 2850
-NoConn ~ 1500 2750
 NoConn ~ 1500 2550
 NoConn ~ 1500 2450
 NoConn ~ 1500 2350
@@ -271,8 +270,6 @@ CN
 Text GLabel 950  4350 0    50   Input ~ 0
 CP
 Wire Wire Line
-	2950 3850 2700 3850
-Wire Wire Line
 	2950 3950 2700 3950
 Wire Wire Line
 	2950 4050 2700 4050
@@ -299,7 +296,7 @@ L Connector_Generic:Conn_01x05 J11
 U 1 1 604AA405
 P 10200 3550
 F 0 "J11" H 10280 3592 50  0000 L CNN
-F 1 "5V GND DIO CLK" H 10280 3501 50  0000 L CNN
+F 1 "CLK DIO G G 5V" H 10280 3501 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 10200 3550 50  0001 C CNN
 F 3 "~" H 10200 3550 50  0001 C CNN
 	1    10200 3550
@@ -612,7 +609,7 @@ L Connector_Generic:Conn_01x03 J10
 U 1 1 60522A42
 P 8850 3600
 F 0 "J10" H 8930 3642 50  0000 L CNN
-F 1 "GND V5 RCP" H 8930 3551 50  0000 L CNN
+F 1 "RCP V5 GND" H 8930 3551 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8850 3600 50  0001 C CNN
 F 3 "~" H 8850 3600 50  0001 C CNN
 	1    8850 3600
@@ -788,7 +785,7 @@ L Connector_Generic:Conn_01x04 J7
 U 1 1 6057DA32
 P 7700 3600
 F 0 "J7" H 7780 3592 50  0000 L CNN
-F 1 "V5 GND TXD RXD" H 7780 3501 50  0000 L CNN
+F 1 "V5 GND RXD TXD" H 7780 3501 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 7700 3600 50  0001 C CNN
 F 3 "~" H 7700 3600 50  0001 C CNN
 	1    7700 3600
@@ -806,9 +803,9 @@ Wire Wire Line
 	7350 3600 7350 3900
 Wire Wire Line
 	7350 3900 8500 3900
-Text GLabel 7150 3700 0    50   Input ~ 0
-TXD
 Text GLabel 7150 3800 0    50   Input ~ 0
+TXD
+Text GLabel 7150 3700 0    50   Input ~ 0
 RXD
 Wire Wire Line
 	7500 3700 7150 3700
@@ -935,9 +932,9 @@ Wire Wire Line
 Wire Wire Line
 	7450 2300 7450 2250
 Connection ~ 7900 2300
-Text GLabel 2950 3350 2    50   Input ~ 0
+Text GLabel 950  4450 0    50   Input ~ 0
 LED1
-Text GLabel 2950 3450 2    50   Input ~ 0
+Text GLabel 950  4550 0    50   Input ~ 0
 LED2
 Wire Wire Line
 	2950 4250 2700 4250
@@ -998,11 +995,11 @@ Text GLabel 2950 4050 2    50   Input ~ 0
 TEST2
 Text GLabel 2950 3950 2    50   Input ~ 0
 TEST3
-Text GLabel 2950 3850 2    50   Input ~ 0
+Text GLabel 1300 2750 0    50   Input ~ 0
 TEST4
 Text GLabel 950  4050 0    50   Input ~ 0
 TEST5
-Text GLabel 950  4450 0    50   Input ~ 0
+Text GLabel 950  3950 0    50   Input ~ 0
 TEST6
 Wire Wire Line
 	950  4050 1500 4050
@@ -1033,8 +1030,8 @@ L Connector_Generic:Conn_01x04 J8
 U 1 1 6057D17D
 P 7850 4900
 F 0 "J8" H 7930 4892 50  0000 L CNN
-F 1 "T4 T3 T2 T1" H 7930 4801 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 7850 4900 50  0001 C CNN
+F 1 "T1 T2 T3 T4" H 7930 4801 50  0000 L CNN
+F 2 "footprint:CONN4-P2.54-DR1.0-W1.5" H 7850 4900 50  0001 C CNN
 F 3 "~" H 7850 4900 50  0001 C CNN
 	1    7850 4900
 	1    0    0    -1  
@@ -1044,7 +1041,7 @@ L Connector_Generic:Conn_01x03 J9
 U 1 1 6057DBDD
 P 7850 5600
 F 0 "J9" H 7930 5642 50  0000 L CNN
-F 1 "CP T6 T5" H 7930 5551 50  0000 L CNN
+F 1 "T5 T6 CP" H 7930 5551 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7850 5600 50  0001 C CNN
 F 3 "~" H 7850 5600 50  0001 C CNN
 	1    7850 5600
@@ -1219,17 +1216,6 @@ Connection ~ 1000 6150
 Wire Wire Line
 	1000 6550 1000 6650
 Connection ~ 1000 6650
-$Comp
-L Connector_Generic:Conn_01x06 J12
-U 1 1 605DD712
-P 10000 5100
-F 0 "J12" H 10080 5092 50  0000 L CNN
-F 1 "AP AN BP BN CP CN" H 10080 5001 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 10000 5100 50  0001 C CNN
-F 3 "~" H 10000 5100 50  0001 C CNN
-	1    10000 5100
-	1    0    0    -1  
-$EndComp
 Text GLabel 9550 5200 0    50   Input ~ 0
 BN
 Text GLabel 9550 5100 0    50   Input ~ 0
@@ -1243,8 +1229,6 @@ AN
 Text GLabel 9550 4900 0    50   Input ~ 0
 AP
 Wire Wire Line
-	9550 4900 9800 4900
-Wire Wire Line
 	9550 5000 9800 5000
 Wire Wire Line
 	9550 5100 9800 5100
@@ -1255,12 +1239,7 @@ Wire Wire Line
 Wire Wire Line
 	9550 5400 9800 5400
 Wire Wire Line
-	2700 3350 2950 3350
-Wire Wire Line
-	2700 3450 2950 3450
-Wire Wire Line
 	1300 3150 1500 3150
-NoConn ~ 1500 4550
 Wire Wire Line
 	1300 3250 1500 3250
 NoConn ~ 1500 4650
@@ -1271,4 +1250,81 @@ Wire Wire Line
 Connection ~ 9850 3650
 Wire Wire Line
 	9850 3650 9850 3900
+Wire Wire Line
+	1500 4550 950  4550
+NoConn ~ 2700 3450
+Wire Wire Line
+	1500 3950 950  3950
+NoConn ~ 2700 3350
+Wire Wire Line
+	1500 2750 1300 2750
+NoConn ~ 2700 3850
+$Comp
+L Connector_Generic:Conn_01x01 J12
+U 1 1 605BD8C5
+P 10000 4900
+F 0 "J12" H 10080 4942 50  0000 L CNN
+F 1 "AP" H 10080 4851 50  0000 L CNN
+F 2 "footprint:CONN1-DR1.0-W2.0" H 10000 4900 50  0001 C CNN
+F 3 "~" H 10000 4900 50  0001 C CNN
+	1    10000 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J13
+U 1 1 605BE502
+P 10000 5000
+F 0 "J13" H 10080 5042 50  0000 L CNN
+F 1 "AN" H 10080 4951 50  0000 L CNN
+F 2 "footprint:CONN1-DR1.0-W2.0" H 10000 5000 50  0001 C CNN
+F 3 "~" H 10000 5000 50  0001 C CNN
+	1    10000 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J14
+U 1 1 605BE9A5
+P 10000 5100
+F 0 "J14" H 10080 5142 50  0000 L CNN
+F 1 "BP" H 10080 5051 50  0000 L CNN
+F 2 "footprint:CONN1-DR1.0-W2.0" H 10000 5100 50  0001 C CNN
+F 3 "~" H 10000 5100 50  0001 C CNN
+	1    10000 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J15
+U 1 1 605BEC88
+P 10000 5200
+F 0 "J15" H 10080 5242 50  0000 L CNN
+F 1 "BN" H 10080 5151 50  0000 L CNN
+F 2 "footprint:CONN1-DR1.0-W2.0" H 10000 5200 50  0001 C CNN
+F 3 "~" H 10000 5200 50  0001 C CNN
+	1    10000 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J16
+U 1 1 605BEF56
+P 10000 5300
+F 0 "J16" H 10080 5342 50  0000 L CNN
+F 1 "CP" H 10080 5251 50  0000 L CNN
+F 2 "footprint:CONN1-DR1.0-W2.0" H 10000 5300 50  0001 C CNN
+F 3 "~" H 10000 5300 50  0001 C CNN
+	1    10000 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J17
+U 1 1 605BF1CB
+P 10000 5400
+F 0 "J17" H 10080 5442 50  0000 L CNN
+F 1 "CN" H 10080 5351 50  0000 L CNN
+F 2 "footprint:CONN1-DR1.0-W2.0" H 10000 5400 50  0001 C CNN
+F 3 "~" H 10000 5400 50  0001 C CNN
+	1    10000 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 4900 9550 4900
 $EndSCHEMATC
