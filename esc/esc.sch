@@ -109,7 +109,7 @@ L Connector_Generic:Conn_01x01 J1
 U 1 1 5C0D041D
 P 1400 6150
 F 0 "J1" H 1480 6192 50  0000 L CNN
-F 1 "Conn_01x01" H 1480 6101 50  0000 L CNN
+F 1 "12V" H 1480 6101 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.5mm_Pad" H 1400 6150 50  0001 C CNN
 F 3 "~" H 1400 6150 50  0001 C CNN
 	1    1400 6150
@@ -120,7 +120,7 @@ L Connector_Generic:Conn_01x01 J2
 U 1 1 5C0D0589
 P 1400 6650
 F 0 "J2" H 1480 6692 50  0000 L CNN
-F 1 "Conn_01x01" H 1480 6601 50  0000 L CNN
+F 1 "GND" H 1480 6601 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.5mm_Pad" H 1400 6650 50  0001 C CNN
 F 3 "~" H 1400 6650 50  0001 C CNN
 	1    1400 6650
@@ -161,8 +161,6 @@ Wire Wire Line
 Wire Wire Line
 	2300 1500 2200 1500
 Connection ~ 2300 1500
-Text Label 2450 1500 0    50   ~ 0
-Vdda
 $Comp
 L power:+3.3V #PWR07
 U 1 1 5BE14ECF
@@ -183,7 +181,6 @@ Wire Wire Line
 NoConn ~ 1500 3650
 NoConn ~ 1500 3550
 NoConn ~ 1500 3450
-NoConn ~ 1500 3350
 NoConn ~ 1500 2950
 NoConn ~ 1500 2850
 NoConn ~ 1500 2750
@@ -221,8 +218,6 @@ Wire Wire Line
 	2950 1500 2300 1500
 Wire Wire Line
 	2950 1850 2950 1950
-NoConn ~ 2700 3350
-NoConn ~ 2700 3450
 NoConn ~ 2700 4350
 Wire Wire Line
 	2000 1500 2100 1500
@@ -263,22 +258,18 @@ F2 "IN" I L 4500 2500 50
 F3 "OUT" O R 5800 2650 50 
 F4 "IP" I L 4500 2800 50 
 $EndSheet
-Text GLabel 1300 4550 0    50   Input ~ 0
+Text GLabel 1300 3150 0    50   Input ~ 0
 AN
-Text GLabel 1300 4650 0    50   Input ~ 0
+Text GLabel 1300 3250 0    50   Input ~ 0
 AP
-Text GLabel 2950 4150 2    50   Input ~ 0
+Text GLabel 1300 3350 0    50   Input ~ 0
 BN
-Text GLabel 2950 4050 2    50   Input ~ 0
+Text GLabel 950  4150 0    50   Input ~ 0
 BP
-Text GLabel 2950 3950 2    50   Input ~ 0
+Text GLabel 950  4250 0    50   Input ~ 0
 CN
-Text GLabel 2950 3850 2    50   Input ~ 0
+Text GLabel 950  4350 0    50   Input ~ 0
 CP
-Wire Wire Line
-	1500 4550 1300 4550
-Wire Wire Line
-	1500 4650 1300 4650
 Wire Wire Line
 	2950 3850 2700 3850
 Wire Wire Line
@@ -308,7 +299,7 @@ L Connector_Generic:Conn_01x05 J11
 U 1 1 604AA405
 P 10200 3550
 F 0 "J11" H 10280 3592 50  0000 L CNN
-F 1 "Conn_01x05" H 10280 3501 50  0000 L CNN
+F 1 "5V GND DIO CLK" H 10280 3501 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 10200 3550 50  0001 C CNN
 F 3 "~" H 10200 3550 50  0001 C CNN
 	1    10200 3550
@@ -328,7 +319,7 @@ $EndComp
 Wire Wire Line
 	10000 3550 9850 3550
 Wire Wire Line
-	9850 3550 9850 3900
+	9850 3550 9850 3650
 $Comp
 L sch_component:REGULAR-7133-1 U3
 U 1 1 604AF0F4
@@ -621,7 +612,7 @@ L Connector_Generic:Conn_01x03 J10
 U 1 1 60522A42
 P 8850 3600
 F 0 "J10" H 8930 3642 50  0000 L CNN
-F 1 "Conn_01x03" H 8930 3551 50  0000 L CNN
+F 1 "GND V5 RCP" H 8930 3551 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8850 3600 50  0001 C CNN
 F 3 "~" H 8850 3600 50  0001 C CNN
 	1    8850 3600
@@ -797,7 +788,7 @@ L Connector_Generic:Conn_01x04 J7
 U 1 1 6057DA32
 P 7700 3600
 F 0 "J7" H 7780 3592 50  0000 L CNN
-F 1 "Conn_01x04" H 7780 3501 50  0000 L CNN
+F 1 "V5 GND TXD RXD" H 7780 3501 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 7700 3600 50  0001 C CNN
 F 3 "~" H 7700 3600 50  0001 C CNN
 	1    7700 3600
@@ -828,7 +819,7 @@ L Connector_Generic:Conn_01x01 J3
 U 1 1 6059ADC5
 P 6000 1800
 F 0 "J3" V 5872 1880 50  0000 L CNN
-F 1 "Conn_01x01" V 5963 1880 50  0000 L CNN
+F 1 "A" V 5963 1880 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.5mm_Pad" H 6000 1800 50  0001 C CNN
 F 3 "~" H 6000 1800 50  0001 C CNN
 	1    6000 1800
@@ -839,7 +830,7 @@ L Connector_Generic:Conn_01x01 J4
 U 1 1 6059C599
 P 6000 2450
 F 0 "J4" V 5872 2530 50  0000 L CNN
-F 1 "Conn_01x01" V 5963 2530 50  0000 L CNN
+F 1 "B" V 5963 2530 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.5mm_Pad" H 6000 2450 50  0001 C CNN
 F 3 "~" H 6000 2450 50  0001 C CNN
 	1    6000 2450
@@ -850,7 +841,7 @@ L Connector_Generic:Conn_01x01 J5
 U 1 1 6059C829
 P 6000 3050
 F 0 "J5" V 5872 3130 50  0000 L CNN
-F 1 "Conn_01x01" V 5963 3130 50  0000 L CNN
+F 1 "C" V 5963 3130 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.5mm_Pad" H 6000 3050 50  0001 C CNN
 F 3 "~" H 6000 3050 50  0001 C CNN
 	1    6000 3050
@@ -944,14 +935,10 @@ Wire Wire Line
 Wire Wire Line
 	7450 2300 7450 2250
 Connection ~ 7900 2300
-Text GLabel 1300 3250 0    50   Input ~ 0
+Text GLabel 2950 3350 2    50   Input ~ 0
 LED1
-Text GLabel 1300 3150 0    50   Input ~ 0
+Text GLabel 2950 3450 2    50   Input ~ 0
 LED2
-Wire Wire Line
-	1300 3150 1500 3150
-Wire Wire Line
-	1300 3250 1500 3250
 Wire Wire Line
 	2950 4250 2700 4250
 Text GLabel 1400 1850 0    50   Input ~ 0
@@ -961,7 +948,7 @@ L Connector_Generic:Conn_01x02 J6
 U 1 1 6051CCF4
 P 6350 3700
 F 0 "J6" H 6430 3692 50  0000 L CNN
-F 1 "Conn_01x02" H 6430 3601 50  0000 L CNN
+F 1 "RESET" H 6430 3601 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6350 3700 50  0001 C CNN
 F 3 "~" H 6350 3700 50  0001 C CNN
 	1    6350 3700
@@ -1005,20 +992,18 @@ Wire Wire Line
 Wire Wire Line
 	6150 3900 7350 3900
 Connection ~ 7350 3900
-Text GLabel 950  3950 0    50   Input ~ 0
+Text GLabel 2950 4150 2    50   Input ~ 0
 TEST1
-Text GLabel 950  4050 0    50   Input ~ 0
+Text GLabel 2950 4050 2    50   Input ~ 0
 TEST2
-Text GLabel 950  4150 0    50   Input ~ 0
+Text GLabel 2950 3950 2    50   Input ~ 0
 TEST3
-Text GLabel 950  4250 0    50   Input ~ 0
+Text GLabel 2950 3850 2    50   Input ~ 0
 TEST4
-Text GLabel 950  4350 0    50   Input ~ 0
+Text GLabel 950  4050 0    50   Input ~ 0
 TEST5
 Text GLabel 950  4450 0    50   Input ~ 0
 TEST6
-Wire Wire Line
-	950  3950 1500 3950
 Wire Wire Line
 	950  4050 1500 4050
 Wire Wire Line
@@ -1048,7 +1033,7 @@ L Connector_Generic:Conn_01x04 J8
 U 1 1 6057D17D
 P 7850 4900
 F 0 "J8" H 7930 4892 50  0000 L CNN
-F 1 "Conn_01x04" H 7930 4801 50  0000 L CNN
+F 1 "T4 T3 T2 T1" H 7930 4801 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 7850 4900 50  0001 C CNN
 F 3 "~" H 7850 4900 50  0001 C CNN
 	1    7850 4900
@@ -1059,7 +1044,7 @@ L Connector_Generic:Conn_01x03 J9
 U 1 1 6057DBDD
 P 7850 5600
 F 0 "J9" H 7930 5642 50  0000 L CNN
-F 1 "Conn_01x03" H 7930 5551 50  0000 L CNN
+F 1 "CP T6 T5" H 7930 5551 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7850 5600 50  0001 C CNN
 F 3 "~" H 7850 5600 50  0001 C CNN
 	1    7850 5600
@@ -1209,7 +1194,7 @@ L Device:R R22
 U 1 1 6057CDE7
 P 8100 2950
 F 0 "R22" H 8030 2904 50  0000 R CNN
-F 1 "10K" H 8030 2995 50  0000 R CNN
+F 1 "1K" H 8030 2995 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8030 2950 50  0001 C CNN
 F 3 "~" H 8100 2950 50  0001 C CNN
 	1    8100 2950
@@ -1234,13 +1219,12 @@ Connection ~ 1000 6150
 Wire Wire Line
 	1000 6550 1000 6650
 Connection ~ 1000 6650
-NoConn ~ 10000 3650
 $Comp
 L Connector_Generic:Conn_01x06 J12
 U 1 1 605DD712
 P 10000 5100
 F 0 "J12" H 10080 5092 50  0000 L CNN
-F 1 "Conn_01x06" H 10080 5001 50  0000 L CNN
+F 1 "AP AN BP BN CP CN" H 10080 5001 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 10000 5100 50  0001 C CNN
 F 3 "~" H 10000 5100 50  0001 C CNN
 	1    10000 5100
@@ -1270,4 +1254,21 @@ Wire Wire Line
 	9550 5300 9800 5300
 Wire Wire Line
 	9550 5400 9800 5400
+Wire Wire Line
+	2700 3350 2950 3350
+Wire Wire Line
+	2700 3450 2950 3450
+Wire Wire Line
+	1300 3150 1500 3150
+NoConn ~ 1500 4550
+Wire Wire Line
+	1300 3250 1500 3250
+NoConn ~ 1500 4650
+Wire Wire Line
+	1500 3350 1300 3350
+Wire Wire Line
+	10000 3650 9850 3650
+Connection ~ 9850 3650
+Wire Wire Line
+	9850 3650 9850 3900
 $EndSCHEMATC
