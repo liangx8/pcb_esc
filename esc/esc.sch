@@ -183,8 +183,6 @@ NoConn ~ 1500 3550
 NoConn ~ 1500 3450
 NoConn ~ 1500 2950
 NoConn ~ 1500 2850
-NoConn ~ 1500 2550
-NoConn ~ 1500 2450
 NoConn ~ 1500 2350
 NoConn ~ 1500 2250
 Wire Wire Line
@@ -646,7 +644,7 @@ L Device:R R1
 U 1 1 60533BE6
 P 2650 6100
 F 0 "R1" H 2580 6054 50  0000 R CNN
-F 1 "10K" H 2580 6145 50  0000 R CNN
+F 1 "Rcc" H 2580 6145 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 2580 6100 50  0001 C CNN
 F 3 "~" H 2650 6100 50  0001 C CNN
 	1    2650 6100
@@ -657,7 +655,7 @@ L Device:R R2
 U 1 1 60533E9E
 P 2650 6800
 F 0 "R2" H 2580 6754 50  0000 R CNN
-F 1 "3K" H 2580 6845 50  0000 R CNN
+F 1 "Rss" H 2580 6845 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 2580 6800 50  0001 C CNN
 F 3 "~" H 2650 6800 50  0001 C CNN
 	1    2650 6800
@@ -978,14 +976,12 @@ Text GLabel 2950 4050 2    50   Input ~ 0
 TEST2
 Text GLabel 2950 3950 2    50   Input ~ 0
 TEST3
-Text GLabel 1300 2750 0    50   Input ~ 0
+Text GLabel 1300 4650 0    50   Input ~ 0
 TEST4
-Text GLabel 950  4050 0    50   Input ~ 0
+Text GLabel 1300 2550 0    50   Input ~ 0
 TEST5
-Text GLabel 950  3950 0    50   Input ~ 0
+Text GLabel 1300 2450 0    50   Input ~ 0
 TEST6
-Wire Wire Line
-	950  4050 1500 4050
 Wire Wire Line
 	950  4150 1500 4150
 Wire Wire Line
@@ -1225,17 +1221,12 @@ Wire Wire Line
 	1300 3150 1500 3150
 Wire Wire Line
 	1300 3250 1500 3250
-NoConn ~ 1500 4650
 Wire Wire Line
 	1500 3350 1300 3350
 Wire Wire Line
 	1500 4550 950  4550
 NoConn ~ 2700 3450
-Wire Wire Line
-	1500 3950 950  3950
 NoConn ~ 2700 3350
-Wire Wire Line
-	1500 2750 1300 2750
 NoConn ~ 2700 3850
 Wire Wire Line
 	9800 4900 9550 4900
@@ -1289,4 +1280,13 @@ Wire Wire Line
 	10000 3650 9200 3650
 Wire Wire Line
 	9200 3650 9200 3300
+Wire Wire Line
+	1500 2450 1300 2450
+Wire Wire Line
+	1500 2550 1300 2550
+NoConn ~ 1500 3950
+NoConn ~ 1500 4050
+Wire Wire Line
+	1500 4650 1300 4650
+NoConn ~ 1500 2750
 $EndSCHEMATC
