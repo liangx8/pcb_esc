@@ -525,7 +525,7 @@ Text GLabel 3500 3350 2    50   Input ~ 0
 V_SAMPLE
 Text GLabel 3500 1950 2    50   Input ~ 0
 RCP
-Text GLabel 3500 2050 2    50   Input ~ 0
+Text GLabel 3500 3250 2    50   Input ~ 0
 TEST1
 Wire Wire Line
 	1000 6150 1350 6150
@@ -864,13 +864,13 @@ Text GLabel 8300 5500 0    50   Input ~ 0
 TEST3
 Wire Wire Line
 	8300 5300 8500 5300
-Text GLabel 3500 2150 2    50   Input ~ 0
+Text GLabel 3500 3150 2    50   Input ~ 0
 TEST2
 Wire Wire Line
 	8500 3700 8500 3900
 Wire Wire Line
 	8500 3250 8500 3600
-Text GLabel 3500 2850 2    50   Input ~ 0
+Text GLabel 3500 3050 2    50   Input ~ 0
 TEST3
 Wire Wire Line
 	3500 2150 3100 2150
@@ -893,9 +893,9 @@ Wire Wire Line
 Wire Wire Line
 	10100 2300 9850 2300
 Connection ~ 9850 2300
-Text GLabel 3500 3150 2    50   Input ~ 0
+Text GLabel 3500 2050 2    50   Input ~ 0
 LED1
-Text GLabel 3500 3050 2    50   Input ~ 0
+Text GLabel 3500 2150 2    50   Input ~ 0
 LED2
 Wire Wire Line
 	3500 2950 3100 2950
@@ -1016,7 +1016,7 @@ Text GLabel 3550 3650 2    50   Input ~ 0
 CP
 Wire Wire Line
 	3100 3150 3500 3150
-Text GLabel 3500 3250 2    50   Input ~ 0
+Text GLabel 3500 2850 2    50   Input ~ 0
 TEST5
 Text GLabel 3500 2950 2    50   Input ~ 0
 TEST4
