@@ -517,7 +517,7 @@ Text GLabel 3550 4050 2    50   Input ~ 0
 AP
 Text GLabel 1800 2250 0    50   Input ~ 0
 Fa
-Text GLabel 3550 4350 2    50   Input ~ 0
+Text GLabel 1800 2150 0    50   Input ~ 0
 Fb
 Text GLabel 3550 4250 2    50   Input ~ 0
 Fabc
@@ -627,13 +627,13 @@ Wire Wire Line
 	3550 4350 3100 4350
 Wire Wire Line
 	1900 2250 1800 2250
-Text GLabel 10300 2900 0    50   Input ~ 0
+Text GLabel 10300 3100 0    50   Input ~ 0
 MOSI
 Text GLabel 10300 3000 0    50   Input ~ 0
 MISO
 Text GLabel 10300 3200 0    50   Input ~ 0
 RESET
-Text GLabel 10300 3100 0    50   Input ~ 0
+Text GLabel 10300 2900 0    50   Input ~ 0
 SCK
 Wire Wire Line
 	10300 2900 10500 2900
@@ -657,7 +657,7 @@ Wire Wire Line
 	3500 3450 3100 3450
 Wire Wire Line
 	3500 2450 3100 2450
-Text GLabel 1800 2150 0    50   Input ~ 0
+Text GLabel 3550 4350 2    50   Input ~ 0
 Fc
 Wire Wire Line
 	1900 2150 1800 2150
